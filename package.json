@@ -1,0 +1,39 @@
+{
+  "name": "easy-count",
+  "version": "0.1.2",
+  "description": "EasyCount app for counting your family budget",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "express-session" : "*",
+    "nconf": "*",
+    "mongojs": "*",
+    "path" : "*",
+    "body-parser" : "*",
+    "method-override": "*",
+    "errorhandler": "*",
+    "passport" : "*",
+    "passport-local" : "*",
+    "bcrypt-nodejs" : "*",
+    "cookie-parser": "*",
+    "connect-flash" : "*",
+    "html" : "*",
+    "ejs" : "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michael-repka/easy-count"
+  },
+  "keywords": [
+    "node",
+    "easy-count",
+    "express"
+  ],
+  "license": "MIT"
+}

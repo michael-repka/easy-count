@@ -1,0 +1,33 @@
+<h1>Users</h1>
+<div class="span4">
+    <!--Sidebar content-->
+    <div class="span4">
+        <fieldset>
+            <legend>Users</legend>
+            Search: <input ng-model="user">
+            <!--Body content-->
+            <ul ng-show="users" class="users">
+                <li  ng-repeat="user in users | filter:user ">
+                    Username <strong>{{user.name}}</strong> - Email <strong>{{user.email}}</strong>
+                </li>
+            </ul>
+            <h4 ng-show="error_message" class="alert-error">{{error_message}}</h4>
+            <h4 ng-show="message" class="alert-info">{{message}}</h4>
+        </fieldset>
+    </div>
+</div>
+<div class="span6">
+    <form name="myform" id="myform1" ng-submit="save()">
+        <fieldset>
+            <legend>New User</legend>
+            <div class="control-group">
+                <center><input type="text" placeholder="User…" ng-model="username" size=50 required/></center>
+                <center><input type="text" placeholder="Password…" ng-model="password" size=50 required/></center>
+                <center><input type="text" placeholder="Email…" ng-model="email" size=50 required/></center>
+            </div>
+        </fieldset>
+        <p>
+        <div><center><button type="submit" >Save now...</button></center></div>
+        </p>
+    </form>
+</div>

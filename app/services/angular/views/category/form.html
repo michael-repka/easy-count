@@ -1,0 +1,24 @@
+<form id="category-form" name="category-form" role="form" ng-submit="save()">
+    <fieldset>
+        <legend>Add Category</legend>
+        <div class="box-body">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" ng-model="title" class="form-control" id="title" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" ng-model="description"  class="form-control" rows="3" placeholder="Enter description"></textarea>
+            </div>
+            <div class="form-group" ng-init="getCategories()" ng-show="categories">
+                <label for="parent">Select sub category</label>
+                <select id="parent" ng-model="parent" name="parent" ng-options="category.title for category in categories"></select>
+            </div>
+            </div>
+        </div><!-- /.box-body -->
+
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </fieldset>
+</form>

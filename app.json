@@ -1,0 +1,7 @@
+{
+  "name": "Node.js EasyCount",
+  "description": "EasyCount app for counting your family budget",
+  "repository": "https://github.com/michael-repka/easy-count",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "easy-count"]
+}
